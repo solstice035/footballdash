@@ -1,0 +1,23 @@
+def homepoints(FTR):
+    if FTR == 'H':
+        return 3
+    if FTR == 'D':
+        return 1
+    if FTR == 'A':
+        return 0
+    return 0
+
+def awaypoints(FTR):
+    if FTR == 'A':
+        return 3
+    if FTR == 'D':
+        return 1
+    if FTR == 'H':
+        return 0
+    return 0
+
+# df['HomePoints'] = df.apply(lambda row: hp(row), axis=1)
+df['HomePoints'] = df['FTR'].apply(homepoints)
+df['HomePoints'] = df['FTR'].apply(homepoints)
+
+df.head()
