@@ -5,6 +5,7 @@
 *.tmp
 
 Sample Dashboards
+/otherRepos
 /TomDraperDash
  
 # Byte-compiled / optimized / DLL files
