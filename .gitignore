@@ -3,8 +3,9 @@
 
 # Temp files
 *.tmp
+/tmp
 
-Sample Dashboards
+# Sample Dashboards
 /otherRepos
 /TomDraperDash
  
