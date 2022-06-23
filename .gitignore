@@ -1,5 +1,7 @@
 # Data files
 *.xls*
+*.csv
+*.pkl
 
 # Temp files
 *.tmp
