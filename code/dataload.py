@@ -121,6 +121,8 @@ team_results = (team_results
 # Export the data to pickle and csv
 pickle_folder = Path(p, "data", "pickle", f"{dateNow}-team_results.pkl")
 team_results.to_pickle(pickle_folder)
+# log export results
+print(f"Exported {team_results.shape[0]} rows to {pickle_folder}")
 csv_folder = Path(p, "output",  f"{dateNow}-team_results.csv")
 team_results.to_csv(csv_folder)
-print("Data loaded and saved")
+print("data exported as csv")
