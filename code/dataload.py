@@ -24,7 +24,7 @@ keepcols = [
     "HTHG",
     "HTAG",
     "HTR",
-    # "Referee",
+    "Referee",
     "HS",
     "AS",
     "HST",
@@ -44,8 +44,6 @@ results_csv = data_folder / "E0.csv"
 results = pd.read_csv(
     results_csv, usecols=keepcols, parse_dates=["Date"], dayfirst=True
 )
-
-
 
 # Melt the data 
 ## converting each matchup into 2 rows
@@ -120,8 +118,9 @@ team_results = (team_results
                     .drop(cols_to_drop, axis=1)
                     .sort_values(by=['Date', 'Referee']))
 
-# Export the data
+# Export the data to pickle and csv
 pickle_folder = Path(p, "data", "pickle", f"{dateNow}-team_results.pkl")
 team_results.to_pickle(pickle_folder)
 csv_folder = Path(p, "output",  f"{dateNow}-team_results.csv")
 team_results.to_csv(csv_folder)
+print("Data loaded and saved")
