@@ -1,13 +1,18 @@
 # Data files
 *.xls*
 
+*.csv
+*.pkl
+
+/data
+
+
 # Temp files
 *.tmp
 /tmp
 
 # Sample Dashboards
 /otherRepos
-/TomDraperDash
  
 # Byte-compiled / optimized / DLL files
 __pycache__/
