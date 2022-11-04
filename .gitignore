@@ -1,13 +1,17 @@
 # Data files
 *.xls*
+
+*.csv
+*.pkl
+
 /data
+
 
 # Temp files
 *.tmp
 /tmp
 
 # Sample Dashboards
-/TomDraperDash
 /otherRepos
  
 # Byte-compiled / optimized / DLL files
