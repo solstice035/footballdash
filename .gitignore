@@ -1,5 +1,6 @@
 # Data files
 *.xls*
+*.csv
 /data
 
 # Temp files
