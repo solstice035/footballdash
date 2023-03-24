@@ -2,12 +2,8 @@
 
 My objective is to build a dashboard to show a bespoke league and key stats on premier league data
 
-
 ## Data Sources
-Currently set-up to pull csv with key match results 
-- Static data: https://www.football-data.co.uk/
-
-Possible move to pull from an API on a free tier
+Using data from an API on a free tier
 - API: https://www.api-football.com/
 
 ## Inspiration from others:
